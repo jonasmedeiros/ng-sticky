@@ -1,0 +1,26 @@
+{
+  "name": "ng-sticky",
+  "version": "0.1.0",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/jonasmedeiros/ng-sticky"
+  },
+  "author": {
+    "name": "Jonas Medeiros",
+    "email": "jonas.g.medeiros@gmail.com"
+  },
+  "keywords": [
+    "angular"
+  ],
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/jonasmedeiros/ng-sticky/issues"
+  },
+  "module": "ng-sticky.js",
+  "typings": "ng-sticky.d.ts",
+  "peerDependencies": {
+    "@angular/core": "^4.0.0",
+    "rxjs": "^5.1.0",
+    "zone.js": "^0.8.4"
+  }
+}
