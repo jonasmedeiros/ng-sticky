@@ -8,7 +8,6 @@ export class NgStickyDirective {
   private sticked: boolean = true;
   private selectedOffset: number = 0;
   private windowOffsetTop: number = 0;
-  private temp: number = 0;
 
   @Input() addClass: string = 'fixed';
   @Input() offSet: number = 0;
