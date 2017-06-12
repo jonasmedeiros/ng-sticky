@@ -10,9 +10,9 @@ To install this library, run:
 $ npm install ng-sticky --save
 ```
 
-## Consuming your library
+## Consuming the library
 
-Once you have published your library to npm, you can import your library in any Angular application by running:
+Import library in any Angular 4 application by running:
 
 ```bash
 $ npm install ng-sticky
@@ -26,7 +26,7 @@ import { NgModule } from '@angular/core';
 
 import { AppComponent } from './app.component';
 
-// Import your library
+// Import NgStickyDirective
 import { NgStickyDirective } from 'ng-sticky';
 
 @NgModule({
@@ -35,10 +35,7 @@ import { NgStickyDirective } from 'ng-sticky';
     NgStickyDirective
   ],
   imports: [
-    BrowserModule,
-
-    // Specify your library as an import
-    LibraryModule
+    BrowserModule
   ],
   providers: [],
   bootstrap: [AppComponent]
@@ -46,10 +43,9 @@ import { NgStickyDirective } from 'ng-sticky';
 export class AppModule { }
 ```
 
-Once your library is imported, you can use its components, directives and pipes in your Angular application:
+Once the library is imported, you can use the directive:
 
 ```xml
-<!-- You can now use your library component in app.component.html -->
 <div ng-sticky [offSet]="20">
   <div>menu</div>
 </div>
