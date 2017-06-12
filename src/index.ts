@@ -1,17 +1,17 @@
 import { NgModule, ModuleWithProviders } from '@angular/core';
 import { CommonModule } from '@angular/common';
-import { SampleDirective } from './sample.directive';
-export * from './sample.directive';
+import { NgStickyDirective } from './ng-sticky.directive';
+export * from './ng-sticky.directive';
 
 @NgModule({
   imports: [
     CommonModule
   ],
   declarations: [
-    SampleDirective
+    NgStickyDirective
   ],
   exports: [
-    SampleDirective
+    NgStickyDirective
   ]
 })
 export class NgStickyModule {
