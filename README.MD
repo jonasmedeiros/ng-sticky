@@ -2,6 +2,9 @@
 
 Angular 4 Directive
 
+## Check demo plunker
+[Demo](https://embed.plnkr.co/zb2igm0xicoeKD9yzwhD/)
+
 ## Installation
 
 To install this library, run:
@@ -46,7 +49,7 @@ export class AppModule { }
 Once the library is imported, you can use the directive:
 
 ```xml
-<div ng-sticky [offSet]="20">
+<div ng-sticky [offSet]="0" [addClass]="'is-sticky'">
   <div>menu</div>
 </div>
 ```

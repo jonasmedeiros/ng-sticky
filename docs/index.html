@@ -192,6 +192,8 @@
                    <div class="content-data">
 <h1 id="ng-sticky">ng-sticky</h1>
 <p>Angular 4 Directive</p>
+<h2 id="check-demo-plunker">Check demo plunker</h2>
+<p><a href="https://embed.plnkr.co/zb2igm0xicoeKD9yzwhD/">Demo</a></p>
 <h2 id="installation">Installation</h2>
 <p>To install this library, run:</p>
 <pre class="line-numbers"><code class="language-bash">$ npm install ng-sticky --save</code></pre><h2 id="consuming-the-library">Consuming the library</h2>
@@ -217,7 +219,7 @@ import { NgStickyDirective } from &#39;ng-sticky&#39;;
   bootstrap: [AppComponent]
 })
 export class AppModule { }</code></pre><p>Once the library is imported, you can use the directive:</p>
-<pre class="line-numbers"><code class="language-xml">&lt;div ng-sticky [offSet]=&quot;20&quot;&gt;
+<pre class="line-numbers"><code class="language-xml">&lt;div ng-sticky [offSet]=&quot;0&quot; [addClass]=&quot;&#39;is-sticky&#39;&quot;&gt;
   &lt;div&gt;menu&lt;/div&gt;
 &lt;/div&gt;</code></pre><h2 id="development">Development</h2>
 <p>To generate all <code>*.js</code>, <code>*.d.ts</code> and <code>*.metadata.json</code> files:</p>
