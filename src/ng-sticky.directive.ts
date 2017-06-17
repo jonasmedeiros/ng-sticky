@@ -35,6 +35,10 @@ export class NgStickyDirective {
       let offset: number = this.el.nativeElement.offsetTop;
       this.windowOffsetTop = window.pageYOffset || document.documentElement.scrollTop || document.body.scrollTop || 0;
 
+      if (this.selectedOffset === 0) {
+        this.selectedOffset = offset;
+      }
+
       if (this.sticked === false) {
         this.selectedOffset = offset;
       }
@@ -46,6 +50,4 @@ export class NgStickyDirective {
         this.removeSticky();
       }
     }
-
-
 }
