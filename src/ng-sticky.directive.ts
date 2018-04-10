@@ -25,7 +25,7 @@ export class NgStickyDirective {
 
   private removeSticky() {
     this.sticked = false;
-    this.el.nativeElement.style.position = '';
+    this.render.setAttribute(this.el.nativeElement, 'style', null);
     this.render.removeClass(this.el.nativeElement, this.addClass);
   }
 
@@ -44,7 +44,6 @@ export class NgStickyDirective {
       }
 
       if ((this.windowOffsetTop + this.offSet) > this.selectedOffset) {
-        
         this.addSticky();
       } else {
         this.removeSticky();
